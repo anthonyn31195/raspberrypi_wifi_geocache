@@ -35,11 +35,13 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 * dnsutils (optional) for test dns - [nslookup](http://linux.die.net/man/1/nslookup) - DNS jelp commands
 * [git](https://git-scm.com/) (optional) - software repo software
 * [hostapd](https://w1.fi/hostapd/) - Wi-Fi access point software
+* [iptables](https://en.wikipedia.org/wiki/Iptables) - IP Packet filtering
 * [lighttpd](https://www.lighttpd.net/) - Web Server software
 * [isc-dhcp-server](https://www.isc.org/downloads/dhcp/) - DHCP software
+* [ssh](https://en.wikipedia.org/wiki/Secure_Shell) - Login using SSH cliets like:  (optional) [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) for Window.
 
 **How it works:**
-Raspbian a Linux operating system.
+Raspbian a Linux operating system the is installed on the MircoSD card. *Hostapd* is the Wi-Fi access point software that broadcast the SSID that Wi-FI client need to connect to the subnet. *isc-dhcp-server* manages the IP address and give the client it network information (IP address, Netmask, Default Router and DNS server). The Default Router and DNS sever will the IP address if WLAN0 Ethernet Inteface. 
 
 **Installing the Software:**
 * To install the Raspberry Pi operating system refer to [Installing Guide](https://www.raspberrypi.org/documentation/installation/installing-images/) on [RaspberryPI web site](https://www.raspberrypi.org/).
