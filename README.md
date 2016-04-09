@@ -1,7 +1,4 @@
-# raspberrypigeocache
-
-RaspberryPI Geocache 
-====================
+# RaspberryPI Wi-Fi Geocache 
 
 This is at GIT repo to create a [RaspberryPI](https://www.raspberrypi.org/) Geocache
 
