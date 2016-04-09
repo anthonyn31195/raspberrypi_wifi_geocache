@@ -8,14 +8,14 @@ Since most people of smart phones, with Wi-Fi and web browser the already have t
 
 Inorder to find and log this cache the geocacher will have to find the Wi-Fi access point Service Set Identifier (SSID), Load there Web Broswer and navagate to the log page.
 
-There are a few things that must be accounted for:
+*There are a few things that must be accounted for:*
  * The RaspberryPI will be standalone and not conencted to the Internet.
  * The RaspberryPI sent up as an Wi-Fi access point.
  * The RaspberryPI will have be a DNS server and return all queries to return it IP address for the query.
  * The Web Server on the system must accept any HTTP (Port 80) request and direct to the log page.
  * Since HTTPS (Port 443) SSL must be signed with SSL Certificate match the site name it will not.
 
-Hardware Requirements:
+**Hardware Requirements:**
 * RaspberryPI 3 or RaspberryPi 2 with a Wi-Fi USB Adapter. 
 * [Real Time Clock](http://www.piface.org.uk/products/piface_clock/) (optional)  
   Since the RaspberryPI does not have an onborad clock it will not rember the time when shutdown and since it not be connected to the internet it will not be able to get time from via NTP. If you want time stamp to be correct on users logs. You will need this.
@@ -29,7 +29,7 @@ Hardware Requirements:
 * Monitor with HDMI port
 * HDMI Cable
 
-Software Requirments installed on the RaspberryPI:
+**Software Requirments installed on the RaspberryPI:**
 * [Raspbian](https://www.raspberrypi.org/downloads/)
 * [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
 * dnsutils (optional) for test dns - [nslookup](http://linux.die.net/man/1/nslookup)
@@ -38,13 +38,13 @@ Software Requirments installed on the RaspberryPI:
 * [lighttpd](https://www.lighttpd.net/)
 * [isc-dhcp-server](https://www.isc.org/downloads/dhcp/)
 
-How it works:  
+**How it works:**
 
-Installing the Software:
+**Installing the Software:**
 * To install the Raspberry Pi operating system refer to [Installing Guide](https://www.raspberrypi.org/documentation/installation/installing-images/) on [RaspberryPI web site](https://www.raspberrypi.org/).
 
-Setup and Test Enviroment use [QEMU](http://wiki.qemu.org/) (optional)  
-* Read [qemu_howto.md](qemu_howto.md)
+**Setup and Test Enviroment use [QEMU](http://wiki.qemu.org/) (optional)**
+* Read [How to use QEMU](qemu_howto.md)
 
 
 [![alt text](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-212x250.png "RaspberryPI")](http://www.raspberrypi.org/)
