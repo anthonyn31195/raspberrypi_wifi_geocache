@@ -30,15 +30,16 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 * HDMI Cable
 
 **Software Requirments installed on the RaspberryPI:**
-* [Raspbian](https://www.raspberrypi.org/downloads/)
-* [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
-* dnsutils (optional) for test dns - [nslookup](http://linux.die.net/man/1/nslookup)
-* [git](https://git-scm.com/) (optional)
-* [hostapd](https://w1.fi/hostapd/)
-* [lighttpd](https://www.lighttpd.net/)
-* [isc-dhcp-server](https://www.isc.org/downloads/dhcp/)
+* [Raspbian](https://www.raspberrypi.org/downloads/) - operating system. 
+* [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) - DNS server software
+* dnsutils (optional) for test dns - [nslookup](http://linux.die.net/man/1/nslookup) - DNS jelp commands
+* [git](https://git-scm.com/) (optional) - software repo software
+* [hostapd](https://w1.fi/hostapd/) - Wi-Fi access point software
+* [lighttpd](https://www.lighttpd.net/) - Web Server software
+* [isc-dhcp-server](https://www.isc.org/downloads/dhcp/) - DHCP software
 
 **How it works:**
+Raspbian a Linux operating system.
 
 **Installing the Software:**
 * To install the Raspberry Pi operating system refer to [Installing Guide](https://www.raspberrypi.org/documentation/installation/installing-images/) on [RaspberryPI web site](https://www.raspberrypi.org/).
