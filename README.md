@@ -47,5 +47,10 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 * Read [How to use QEMU](qemu_howto.md)
 
 
+
+
+
+
+
 [![alt text](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-212x250.png "RaspberryPI")](http://www.raspberrypi.org/)
 [![alt text](https://www.geocaching.com/play/Content/images/touch/touch-icon-192x192.png "Geocache")](http://www.geocaching.com)
