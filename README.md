@@ -31,7 +31,7 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 
 **Software Requirments installed on the RaspberryPI:**
 * [Raspbian](https://www.raspberrypi.org/downloads/) - operating system. 
-* [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) - DNS server software
+* [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) - DNS and DHCP server software
 * dnsutils (optional) for test dns - [nslookup](http://linux.die.net/man/1/nslookup) - DNS jelp commands
 * [git](https://git-scm.com/) (optional) - software repo software
 * [hostapd](https://w1.fi/hostapd/) - Wi-Fi access point software
@@ -47,7 +47,7 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 * **isc-dhcp-server** manages the IP address and give the client it network information (IP address, Netmask, Default Router and DNS server). The Default Router and DNS sever will the IP address if WLAN0 Ethernet Inteface.
 * **DNSmasq** is the DNS server that will serve DNS queries, since the the device will not be connect to the internet. **DNSmasg** will return any address lookup request to be the IP address on the WLAN0 interface.
 * **Iptables** is use a firewall and we use to router HTTP (port 80) route all reqeust to Port 80 on the RaspberryPI.
-* **Lighttpd** is the Web server the will handle the GET requst and server up the web. We will also user a [rewrite rule](https://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite) so any page request will return the index.html page.
+* **Lighttpd** is the Web server the will handle the GET requst and server up the web. Also has a [rewrite rule](https://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite) so any page request will return the index.html page.
 
 **Installing the Software:**
 * To install the Raspberry Pi operating system refer to [Installing Guide](https://www.raspberrypi.org/documentation/installation/installing-images/) on [RaspberryPI web site](https://www.raspberrypi.org/).
