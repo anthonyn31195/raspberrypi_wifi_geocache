@@ -1,8 +1,8 @@
 # RaspberryPI Wi-Fi Geocache 
 
-This is at GIT repo to create a [RaspberryPI](https://www.raspberrypi.org/) Wi-FI Geocache
+This is at GIT repo to create a [RaspberryPI](https://www.raspberrypi.org/) Wi-FI Geocache.
 
-The purpose of this is to setup a [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi) Geocache using the RasberryPI as field puzzle. 
+The purpose of this is to setup a [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi) Geocache using the RasberryPI as field puzzle. This tell you how to set and install the software. It does not scribe how to set the hardware side of the cache or power it with a battery. This is based on [Wireless Geocache Tutorial](http://forums.groundspeak.com/GC/index.php?showtopic=329890) on [Geocaching Forums](http://forums.groundspeak.com)
 
 Since most people of smart phones, with Wi-Fi and web browser the already have to Tools Of The Trade (TOTT) that they will need to find the cache.
 
@@ -12,16 +12,22 @@ There are a few things that must be accounted for:
  * The RaspberryPI will be standalone and not conencted to the Internet.
  * The RaspberryPI sent up as an Wi-Fi access point.
  * The RaspberryPI will have be a DNS server and return all queries to return it IP address for the query.
- * The Web Server on the system must accept any HTTP request and direct to the log page.
- * Since HTTPS SSL must be signed with certificate match the site name it will not.
+ * The Web Server on the system must accept any HTTP (Port 80) request and direct to the log page.
+ * Since HTTPS (Port 443) SSL must be signed with SSL Certificate match the site name it will not.
 
 Hardware Requirements:
 * RaspberryPI 3 or RaspberryPi 2 with a Wi-Fi USB Adapter. 
 * [Real Time Clock](http://www.piface.org.uk/products/piface_clock/) (optional)  
   Since the RaspberryPI does not have an onborad clock it will not rember the time when shutdown and since it not be connected to the internet it will not be able to get time from via NTP. If you want time stamp to be correct on users logs. You will need this.
-* Mirco USB adpter for powering.
+* Mirco USB adpter for powering the RaspberryPI
+* Mirco SD card (recommend 32GB)
 * Cat 5 Ethernet Cable. (Installing OS and configure the software)
 * Router with an Enternet Port. (Installing OS and configure the software)
+* RaspberryPI case (optional)
+* USB Keyboard (Installing OS and configure the software)
+* USB Moouse ((Installing OS and configure the software))
+* Monitor with HDMI port
+* HDMI Cable
 
 Software Requirments installed on the RaspberryPI:
 * [Raspbian](https://www.raspberrypi.org/downloads/)
@@ -32,11 +38,14 @@ Software Requirments installed on the RaspberryPI:
 * [lighttpd](https://www.lighttpd.net/)
 * [isc-dhcp-server](https://www.isc.org/downloads/dhcp/)
 
+How it works:  
 
+Installing the Software:
+* To install the Raspberry Pi operating system refer to [Installing Guide](https://www.raspberrypi.org/documentation/installation/installing-images/) on [RaspberryPI web site](https://www.raspberrypi.org/).
 
 Setup and Test Enviroment use [QEMU](http://wiki.qemu.org/) (optional)  
 * Read [qemu_howto.md](qemu_howto.md)
 
 
-![alt text](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-212x250.png "RaspberryPI")
-![alt text](https://www.geocaching.com/play/Content/images/touch/touch-icon-192x192.png "Geocache")
+[![alt text](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-212x250.png "RaspberryPI")](http://www.raspberrypi.org/)
+[![alt text](https://www.geocaching.com/play/Content/images/touch/touch-icon-192x192.png "Geocache")](http://www.geocaching.com)
