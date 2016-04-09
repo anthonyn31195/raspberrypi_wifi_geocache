@@ -26,10 +26,14 @@ Hardware Requirements:
 Software Requirments:
 * [Raspbian](https://www.raspberrypi.org/downloads/)
 * [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
-* dnsutils (optional) for test dns
+* dnsutils (optional) for test dns - [nslookup](http://linux.die.net/man/1/nslookup)
 * [hostapd](https://w1.fi/hostapd/)
 * [lighttpd](https://www.lighttpd.net/)
 * [isc-dhcp-server](https://www.isc.org/downloads/dhcp/)
+
+Setup and Test Enviroment use [QEMU](http://wiki.qemu.org/) (optional)
+Read [qemu_howto.md](qemu_howto.md)
+
 
 ![alt text](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-212x250.png "RaspberryPI")
 ![alt text](https://www.geocaching.com/play/Content/images/touch/touch-icon-192x192.png "Geocache")
