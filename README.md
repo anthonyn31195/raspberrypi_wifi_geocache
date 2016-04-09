@@ -31,7 +31,7 @@ Software Requirments:
 * [lighttpd](https://www.lighttpd.net/)
 * [isc-dhcp-server](https://www.isc.org/downloads/dhcp/)
 
-Setup and Test Enviroment use [QEMU](http://wiki.qemu.org/) (optional)
+Setup and Test Enviroment use [QEMU](http://wiki.qemu.org/) (optional)  
 Read [qemu_howto.md](qemu_howto.md)
 
 
