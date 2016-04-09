@@ -18,7 +18,7 @@ There are a few things that must be accounted for:
 Hardware Requirements:
 * RaspberryPI 3 or RaspberryPi 2 with a Wi-Fi USB Adapter. 
 * [Real Time Clock](http://www.piface.org.uk/products/piface_clock/) (optional)  
-...Since the RaspberryPI does not have an onborad clock it will not rember the time when shutdown and since it not be connected to the internet it will not be able to get time from via NTP. If you want time stamp to be correct on users logs. You will need this.
+  Since the RaspberryPI does not have an onborad clock it will not rember the time when shutdown and since it not be connected to the internet it will not be able to get time from via NTP. If you want time stamp to be correct on users logs. You will need this.
 
 ![alt text](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-212x250.png "RaspberryPI")
 ![alt text](https://www.geocaching.com/play/Content/images/touch/touch-icon-192x192.png "Geocache")
