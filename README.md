@@ -4,9 +4,9 @@ This is at GIT repo to create a [RaspberryPI](https://www.raspberrypi.org/) Wi-F
 
 The purpose of this is to setup a [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi) Geocache using the RasberryPI as field puzzle. This tell you how to set and install the software. It does not scribe how to set the hardware side of the cache or power it with a battery. This is based on [Wireless Geocache Tutorial](http://forums.groundspeak.com/GC/index.php?showtopic=329890) on [Geocaching Forums](http://forums.groundspeak.com)
 
-Since most people of smart phones, with Wi-Fi and web browser the already have to Tools Of The Trade (TOTT) that they will need to find the cache.
+Since most Geocacher have smart phones with Wi-Fi and web browser they already have to Tools Of The Trade (TOTT) needed.
 
-Inorder to find and log this cache the geocacher will have to find the Wi-Fi access point Service Set Identifier (SSID), Load there Web Broswer and navagate to the log page.
+Inorder to find and log this cache the geocacher will have to find the Wi-Fi access point Service Set Identifier (SSID), Open a Web Broswer App on there phone and navagate to the log page. Enter there Geocaching nickname on the form and hit submit button.
 
 **There are a few things that must be accounted for:**
  * The RaspberryPI will be standalone and not conencted to the Internet.
