@@ -8,7 +8,7 @@ Since most people of smart phones, with Wi-Fi and web browser the already have t
 
 Inorder to find and log this cache the geocacher will have to find the Wi-Fi access point Service Set Identifier (SSID), Load there Web Broswer and navagate to the log page.
 
-*There are a few things that must be accounted for:*
+**There are a few things that must be accounted for:**
  * The RaspberryPI will be standalone and not conencted to the Internet.
  * The RaspberryPI sent up as an Wi-Fi access point.
  * The RaspberryPI will have be a DNS server and return all queries to return it IP address for the query.
