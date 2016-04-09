@@ -23,16 +23,19 @@ Hardware Requirements:
 * Cat 5 Ethernet Cable. (Installing OS and configure the software)
 * Router with an Enternet Port. (Installing OS and configure the software)
 
-Software Requirments:
+Software Requirments installed on the RaspberryPI:
 * [Raspbian](https://www.raspberrypi.org/downloads/)
 * [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
 * dnsutils (optional) for test dns - [nslookup](http://linux.die.net/man/1/nslookup)
+* [git](https://git-scm.com/) (optional)
 * [hostapd](https://w1.fi/hostapd/)
 * [lighttpd](https://www.lighttpd.net/)
 * [isc-dhcp-server](https://www.isc.org/downloads/dhcp/)
 
+
+
 Setup and Test Enviroment use [QEMU](http://wiki.qemu.org/) (optional)  
-Read [qemu_howto.md](qemu_howto.md)
+* Read [qemu_howto.md](qemu_howto.md)
 
 
 ![alt text](https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo-212x250.png "RaspberryPI")
