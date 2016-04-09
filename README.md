@@ -18,7 +18,7 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 **Hardware Requirements:**
 * RaspberryPI 3 or RaspberryPi 2 with a Wi-Fi USB Adapter. 
 * [Real Time Clock](http://www.piface.org.uk/products/piface_clock/) (optional)  
-  Since the RaspberryPI does not have an onborad clock it will not rember the time when shutdown and since it not be connected to the internet it will not be able to get time from via NTP. If you want time stamp to be correct on users logs. You will need this.
+  Since the RaspberryPI does not have an onborad clock it will not rember the time when shutdown and since it not be connected to the internet it will not be able to get time from via [NTP](http://www.ntp.org/). If you want time stamp to be correct on users logs. You will need this.
 * Mirco USB adpter for powering the RaspberryPI
 * Mirco SD card (recommend 32GB)
 * Cat 5 Ethernet Cable. (Installing OS and configure the software)
