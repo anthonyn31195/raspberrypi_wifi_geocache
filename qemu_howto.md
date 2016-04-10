@@ -9,6 +9,7 @@ Download the QEMU environment for your computer.
 ** Windows **
 
 1. Download the lastest verion of [QEMU for windows](https://qemu.weilnetz.de/)  
+2. Download the [qemu rpi kernel](https://github.com/dhruvvyas90/qemu-rpi-kernel)
 2. Add the QEMU directory to you %PATH% variable.  
 3. Open a command window.  
 4. Make a the ```qemu`` diretory.
