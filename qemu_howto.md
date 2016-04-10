@@ -8,14 +8,17 @@ Download the QEMU environment for your computer.
 
 ** Windows **
 
-Download the lastest verion of [QEMU for windows](https://qemu.weilnetz.de/)  
-Add the QEMU directory to you %PATH% variable.  
-Open a command window.  
-Make a the ```qemu_vms`` diretory.
+1. Download the lastest verion of [QEMU for windows](https://qemu.weilnetz.de/)  
+2. Add the QEMU directory to you %PATH% variable.  
+3. Open a command window.  
+4. Make a the ```qemu`` diretory.
 
 ```
-mkdir qemu_vms
-cd qemu_vms
+mkdir %userprofile%\qemu
+cd %userprofile%\qemu_vms
 ```
-Download [Raspbian OS zip file](https://downloads.raspberrypi.org/raspbian_latest) into the ```qemu_vms``` directory.
-
+5. Download [Raspbian OS zip file](https://downloads.raspberrypi.org/raspbian_latest) into the ```qemu``` directory.
+6. Unzip Raspbain Zip file.
+7. Reszie the Image (ingore erros)
+```qemu-img.exe resize <image file> +10G```
+8.
