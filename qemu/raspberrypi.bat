@@ -30,4 +30,11 @@ set INIT=/bin/bash
 Rem rootfstype
 set ROOTFSTYPE=ext4
 
-%QEMU% -kernel %KERNEL% -cpu %CPU% -m %RAM% -M %MACHINE% -no-reboot -serial %SERIAL% -append "root=%DISK% panic=1 rootfstype=%ROOTFSTYPE% rw init=%INIT%" -hda %IMAGE%
+%QEMU% -kernel %KERNEL% ^
+ -cpu %CPU% ^
+ -m %RAM% ^
+ -M %MACHINE% ^
+ -no-reboot ^
+ -serial %SERIAL% ^
+ -append "root=%DISK% panic=1 rootfstype=%ROOTFSTYPE% rw init=%INIT%" ^
+ -hda %IMAGE%
