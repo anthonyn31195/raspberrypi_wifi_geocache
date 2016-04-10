@@ -22,5 +22,6 @@ cd %userprofile%\qemu_vms
 6. Unzip Raspbain Zip file.
 7. Reszie the Image (ingore erros)
 ```qemu-img.exe resize <image file> +10G```
-8.
-https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki
+8.  
+https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki  
+http://techny.tumblr.com/post/36589722093/quick-guide-on-emulating-a-raspberry-pi-in-windows
