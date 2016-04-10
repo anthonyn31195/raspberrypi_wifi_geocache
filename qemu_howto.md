@@ -23,3 +23,4 @@ cd %userprofile%\qemu_vms
 7. Reszie the Image (ingore erros)
 ```qemu-img.exe resize <image file> +10G```
 8.
+https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki
