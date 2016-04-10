@@ -24,4 +24,5 @@ cd %userprofile%\qemu_vms
 ```qemu-img.exe resize <image file> +10G```
 8.  
 https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki  
-http://techny.tumblr.com/post/36589722093/quick-guide-on-emulating-a-raspberry-pi-in-windows
+http://techny.tumblr.com/post/36589722093/quick-guide-on-emulating-a-raspberry-pi-in-windows  
+https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki
