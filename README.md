@@ -53,6 +53,7 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 * sudo lighty-enable-mod fastcgi 
 * sudo lighty-enable-mod fastcgi-php
 * sudo service lighttpd force-reload [refence](https://wiki.ubuntu.com/Lighttpd%2BPHP)
+
 **Installing the Software:**
 * To install the Raspberry Pi operating system refer to [Installing Guide](https://www.raspberrypi.org/documentation/installation/installing-images/) on [RaspberryPI web site](https://www.raspberrypi.org/).
 
