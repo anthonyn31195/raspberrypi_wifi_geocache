@@ -48,7 +48,8 @@ Inorder to find and log this cache the geocacher will have to find the Wi-Fi acc
 * **DNSmasq** is the DNS server that will serve DNS queries, since the the device will not be connect to the internet. **DNSmasg** will return any address lookup request to be the IP address on the WLAN0 interface.
 * **Iptables** is use a firewall and we use to router HTTP (port 80) route all reqeust to Port 80 on the RaspberryPI.
 * **Lighttpd** is the Web server the will handle the GET requst and server up the web. Also has a [rewrite rule](https://redmine.lighttpd.net/projects/1/wiki/docs_modrewrite) so any page request will return the index.html page.
-
+* **php5-cgi
+* 
 **Installing the Software:**
 * To install the Raspberry Pi operating system refer to [Installing Guide](https://www.raspberrypi.org/documentation/installation/installing-images/) on [RaspberryPI web site](https://www.raspberrypi.org/).
 
