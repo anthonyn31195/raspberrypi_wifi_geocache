@@ -35,3 +35,8 @@ ompiled source #
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.pid
+
+# QEMU files
+image
+snapshot/
