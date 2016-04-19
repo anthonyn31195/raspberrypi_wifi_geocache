@@ -26,3 +26,6 @@ cd %userprofile%\qemu_vms
 https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki  
 http://techny.tumblr.com/post/36589722093/quick-guide-on-emulating-a-raspberry-pi-in-windows  
 https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki
+
+brew install squashfs
+qemu-img create -f qcow2 RaspberryPI.qcow 32G
