@@ -36,6 +36,7 @@ ompiled source #
 ehthumbs.db
 Thumbs.db
 *.pid
+*~
 
 # QEMU files
 image
