@@ -20,13 +20,17 @@ if [ ! -d "$MOUNT" ] ; then
   mkdir $MOUNT
 fi
 
+if [ ! -f "$ZIP_IMAGE" ] ; then
+  exit
+fi
+
 if [ ! -f "$IMAGE" ] ; then
   unzip -d $IMAGE_DIR $ZIP_IMAGE
   #qemu-img resize $IMAGE $IMAGE_SIZE
 fi
 
 if [ -f "$IMAGE" ] ; then
-  OFFSITE=`fdisk -l $IMAGE | awk '/img2/ {print $2*512}'`
+  OFFSITE=`fdisk $IMAGE | awk '/img2/ {print $2*512}'`
 fi
 
 if [ ! -d "$MOUNT" ] ; then
