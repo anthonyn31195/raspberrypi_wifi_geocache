@@ -10,3 +10,5 @@ sudo vi /etc/dnsmasq.d/geocache.conf
 Add:
 
 sudo dpkg-reconfigure keyboard-configuration
+
+sudo raspi-config
