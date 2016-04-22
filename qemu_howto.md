@@ -29,3 +29,5 @@ https://github.com/dhruvvyas90/qemu-rpi-kernel/wiki
 
 brew install squashfs
 qemu-img create -f qcow2 RaspberryPI.qcow 32G
+
+https://gist.github.com/larsks/3933980
