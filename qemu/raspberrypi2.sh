@@ -1,5 +1,5 @@
 #!/bin/bash 
-IMAGE_DIR=../../RaspberryPI
+IMAGE_DIR=../../RaspberryPI/
 image_base=2016-03-18-raspbian-jessie.qcow2
 image=$IMAGE_DIR/$image_base
 kernel=$IMAGE_DIR/kernel-qemu-4.1.13-jessie
