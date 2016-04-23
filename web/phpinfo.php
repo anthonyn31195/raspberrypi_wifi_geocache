@@ -1,6 +1,6 @@
 <html>
 <head></head>
 <body>
-<php? phpinfo(); ?>
+<?php phpinfo(); ?>
 <body>
 </html>
