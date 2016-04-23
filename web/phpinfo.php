@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>raspberrypi</title>
+<head>
+<body>
+<?php
+phpinfo();
+?>
+</body>
+</html>

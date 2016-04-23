@@ -6,6 +6,12 @@ if [ -x "$functions" ] ; then
   source $functions
 fi
 
+if [ "$1" = "-c" ] ; then
+  display=""
+else
+  display="-display none"
+fi
+
 # 
 SCRIPT_DIR=`getabsolutepath $0`
 
@@ -19,7 +25,7 @@ date=`date +%Y-%m-%d-%H-%M-%S`
 temp_dir=$SCRIPT_DIR/tmp/
 snapshot_dir=$SCRIPT_DIR/snapshot
 snapshot=$image_base-$date
-snapshot_file=`basename $0 .sh`.snapshot
+snapshot_file=$temp_dir`basename $0 .sh`.snapshot
 pidfile=$temp_dir`basename $0 .sh`.pid
 
 if [ ! -d "$temp_dir" ] ; then
@@ -47,6 +53,7 @@ fi
 
 qemu-system-arm -kernel $kernel \
   -cpu arm1176 \
+  $display \
   -m 256 \
   -M versatilepb \
   -serial stdio \
