@@ -2,16 +2,25 @@
 $tracking_codes = array(
 	raspberrypi => "testcode"
 	);
+$tracking_code = $tracking_codes[php_uname("n")];
+$name = "Splasher Hacker CacheBerry";
+$find_code = "CACHEBERRY";
 ?>
-$tracking_code = $tracking_codes(php_uname("n"));
+
 <html>
 <head>
-	<tile>Splasher Hacker CacheBerry</title>
+	<title>Splasher Hacker CacheBerry</title>
 </head>
 <body>
-	<h2>Splasher Hacker CacheBerry</h2>
-	<h2>Find Code: CacheBerry</h2>
-	<h2>Trackme at Geocaching.com</h2>
-	<h2>Tacking Code: <?php print $tracking_code; ?></h2>
+	<?php print $name; ?><br>
+	<p>Lab Cache Find Code: <?php print $find_code; ?>
+	<p>Trackme at Geocaching.com<br>
+	<p>Tacking Code: <?php print $tracking_code; ?>
+	<form action="#" method="post">
+		Geocaching name:
+		<input type="text" name="geocaching_name" width="30"><br>
+		<input type="submit" value="log">
+	</form>
+	<?php phpinfo(); ?>
 </body>
 </html>
