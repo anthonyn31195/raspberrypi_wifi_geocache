@@ -2,16 +2,22 @@
 # 
 # configure
 
-const tracking_codes = array(
+$tracking_codes = array(
   "raspberrypi" => "testcode"
   );
 
-define("cache_name", "Splasher Hacker CacheBerry");
+define("timezone", "America/Los_Angeles");
 
-define("find_code", "CACHEBERRY");
+
+define("cache_name", "Hacker's CacheBerry");
+
+define("find_code", "testing");
 
 define("log_file", "/tmp/geocache_log.txt");
 
 define("append", "a");
 
+define("gname","geocaching_nickname");
+
+date_default_timezone_set(timezone);
 ?>
