@@ -13,7 +13,7 @@ function writelog() {
 	}
 }
 
-function trackingcode() {
+function tracking_code() {
 	$tracking_code = "tracking code not found";
 	if ( tracking_codes[php_uname("n")] != null ) {
 		$tracking_code = tracking_codes[php_uname("n")];
