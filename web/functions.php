@@ -2,7 +2,7 @@
 # Functions
 
 function writelog() {
-	$data = date('M d, Y');
+	$date = date('M d, Y');
 	if (isset($_REQUEST["geocaching_name"]) and !empty($_REQUEST["geocaching_name"])) {
 		$file = fopen(log_file, append);
 		if (flock($file,LOCK_EX)) {
