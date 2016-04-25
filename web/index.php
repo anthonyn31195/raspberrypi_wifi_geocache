@@ -1,16 +1,23 @@
+<?php
+
+  include_once("etc/config.php");
+  include_once("lib/functions.php");
+  writelog();
+?>
+
 <html>
 <head>
-<title>hacker's cacheberry</title>
+  <title>Splasher Hacker CacheBerry</title>
 </head>
 <body>
-<table>
-<tr><td colspan="2"><center><h2>hacker's cacheberry</h3></center>
-<center><h3>find code: cacheberry</h3></center></td></tr>
-<form id="logform">
-<tr><td>geocaching nickname:</td><td><input type="text" name="nickname" width="20"></td></tr>
-<tr><td>Comment:</td><td><textarea name="comment"></textarea></td></tr>
-<tr><td></td><td><input type="submit" value="log"></td></td>
-</table>
-</form>
+  <?php print cache_name; ?><br>
+  <p>Lab Cache Find Code: <?php print set_color(find_code,red); ?>
+  <p>Trackme at Geocaching.com<br>
+  <p>Tacking Code: <?php print tracking_code(); ?>
+  <p><form action="#" method="post">
+    Geocaching name:
+    <input type="text" name="geocaching_name" width="30"><br>
+    <input type="submit" value="log">
+  </form>
 </body>
 </html>
