@@ -20,3 +20,7 @@ function tracking_code() {
 	}
 	return $tracking_code;
 }
+
+function set_color($text,$color) {
+	return "<font color=\"$color\">$text</font>\n";
+}

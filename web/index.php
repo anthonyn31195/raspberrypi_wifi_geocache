@@ -11,7 +11,7 @@
 </head>
 <body>
 	<?php print cache_name; ?><br>
-	<p>Lab Cache Find Code: <?php print find_code; ?>
+	<p>Lab Cache Find Code: <?php print set_color(find_code,"red"); ?>
 	<p>Trackme at Geocaching.com<br>
 	<p>Tacking Code: <?php print tracking_code(); ?>
 	<form action="#" method="post">
