@@ -19,6 +19,6 @@
 		<input type="text" name="geocaching_name" width="30"><br>
 		<input type="submit" value="log">
 	</form>
-	<?php phpinfo(); ?>
+	<?php phpinfo(16+32); ?>
 </body>
 </html>
