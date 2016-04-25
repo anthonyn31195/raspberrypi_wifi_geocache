@@ -3,7 +3,7 @@
 
 function writelog() {
 	$data = date('M d, Y');
-	if isset($_REQUEST["geocaching_name"] and !empty($vars[1])) {
+	if isset($_REQUEST["geocaching_name"] and !empty($_REQUEST["geocaching_name"])) {
 		$file = fopen(log_file, append);
 		if (flock($file,LOCK_EX)) {
 			fwrite($file,$date . "|". $_REQUEST["geocaching_name"] . "\n");
