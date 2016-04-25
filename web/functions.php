@@ -12,3 +12,11 @@ function writelog() {
 	}
 	fclose($file);
 }
+
+function trackingcode() {
+	$tracking_code = "tracking code not found";
+	if ( isset(tracking_codes[php_uname("n")) {
+		$tracking_code = tracking_codes[php_uname("n");
+	}
+	return $tracking_code;
+}
