@@ -1,10 +1,8 @@
 <?php
 
 	include_once("config.php");
-	include_once("functions.php")
-	$data = date('M d, Y');
-	if isset($_REQUEST["geocaching_name"] and !empty($vars[1])) {
-		writelog($date,$_REQUEST["geocaching_name"]);
+	include_once("functions.php");
+	writelog();
 	}
 ?>
 
