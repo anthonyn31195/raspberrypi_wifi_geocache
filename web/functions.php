@@ -9,8 +9,8 @@ function writelog() {
 			fwrite($file,$date . "|". $_REQUEST["geocaching_name"] . "\n");
 			flock($file,LOCK_UN);
 		}
+		fclose($file);
 	}
-	fclose($file);
 }
 
 function trackingcode() {
