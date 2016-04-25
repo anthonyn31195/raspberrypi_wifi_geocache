@@ -3,8 +3,8 @@
 # configure
 
 const tracking_codes = array(
-	"raspberrypi" => "testcode"
-	);
+  "raspberrypi" => "testcode"
+  );
 
 define("cache_name", "Splasher Hacker CacheBerry");
 
