@@ -1,10 +1,11 @@
-<?php 
-$tracking_codes = array(
-	raspberrypi => "testcode"
-	);
-$tracking_code = $tracking_codes[php_uname("n")];
-$name = "Splasher Hacker CacheBerry";
-$find_code = "CACHEBERRY";
+<?php
+
+	include_once("config.php");
+	include_once("functions.php")
+	$data = date('M d, Y');
+	if isset($_REQUEST["geocaching_name"] and !empty($vars[1])) {
+		writelog($date,$_REQUEST["geocaching_name"]);
+	}
 ?>
 
 <html>
@@ -12,10 +13,10 @@ $find_code = "CACHEBERRY";
 	<title>Splasher Hacker CacheBerry</title>
 </head>
 <body>
-	<?php print $name; ?><br>
-	<p>Lab Cache Find Code: <?php print $find_code; ?>
+	<?php print cache_name; ?><br>
+	<p>Lab Cache Find Code: <?php print find_code; ?>
 	<p>Trackme at Geocaching.com<br>
-	<p>Tacking Code: <?php print $tracking_code; ?>
+	<p>Tacking Code: <?php print tracking_code; ?>
 	<form action="#" method="post">
 		Geocaching name:
 		<input type="text" name="geocaching_name" width="30"><br>
