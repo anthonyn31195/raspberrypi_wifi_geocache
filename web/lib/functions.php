@@ -4,14 +4,24 @@ define("red","red");
 define("green","green");
 define("_append", "a");
 define("_read","r");
+define("_write","w+");
+define("_pre_append", "r+");
 define("fhostname",php_uname("n"));
+define("log_pattern", "/\|/");
+define("log_replace", "</td><td>");
 
 function writelog() {
-  $date = date('U'); # ecpoch date
+  $date = date('Y-m-d'); # ecpoch date
   if (isset($_REQUEST[gname]) and !empty($_REQUEST[gname])) {
-    $file = fopen(log_file, _append) or die("Unable to open file!");
+    if ( file_exists(log_file)) {
+      $file = fopen(log_file, _pre_append) or die("Unable to open file!");
+    } else {
+      $file = fopen(log_file, _write) or die("Unable to open file!");
+    }
     if (flock($file,LOCK_EX)) {
-      fwrite($file,$date . "|" . $_REQUEST[gname] . "|" . $_REQUEST[gcomment] ."\n");
+      $content = fread($file, filesize(log_file));
+      fseek($file,0);
+      fwrite($file,$date . "|" . $_REQUEST[gname] . "|" . $_REQUEST[gcomment] ."\n" . $content);
       flock($file,LOCK_UN);
     }
     fclose($file);
@@ -21,7 +31,15 @@ function writelog() {
 function readlog() {
   if ( file_exists(log_file) ) {
     $log = fopen(log_file, _read);
-    print nl2br(fread($log, filesize(log_file)));
+
+    $log_text = fread($log, filesize(log_file));
+    if (isset($_REQUEST[gname]) and !empty($_REQUEST[gname])) {
+      $log_text = date('Y-m-d') . "|" . $_REQUEST[gname] . "|" . $_REQUEST[gcomment] ."\n" . $log_text;
+    }
+    $log_text = preg_replace(log_pattern, log_replace, $log_text);
+    $log_text = preg_replace("/\r?\n/","</td></tr>\n<tr><td>",$log_text);
+    $log_text = "<table width=\"90%\">\n<tr><td>" . $log_text . "</td></tr>\n</table>\n";
+    print $log_text;
   }
 }
 

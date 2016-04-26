@@ -2,6 +2,7 @@
 
   include_once("etc/config.php");
   include_once("lib/functions.php");
+  writelog();
 ?>
 
 <html>
@@ -22,7 +23,7 @@
     <h4><?php print cache_name; ?></h4>
   </div>
   <div data-role="main" class="ui-content">
-  <?php writelog(); ?>
+
   <p>Lab Cache Find Code: <?php print set_color(find_code,red); ?>
   <p>Track me at Geocaching.com<br>
   <p>Tacking Code: <?php print set_color(tracking_code(),green) . "\n"; ?>
