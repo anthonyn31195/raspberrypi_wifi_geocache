@@ -7,11 +7,32 @@ define("_read","r");
 define("_write","w+");
 define("_pre_append", "r+");
 define("fhostname",php_uname("n"));
-define("log_pattern", "/\|/");
-define("log_replace", "</td><td>");
+define("log_format","%s|%s|%s");
+define("date_format","D, M jS, Y g:i a")
+
+define("table", 
+"  <div class=\"container\">\n" .
+"    <table class=\"table\">\n" .
+"      <thead>\n" .
+"        <tr>\n" .
+"          <th>Date</th>\n" .
+"          <th>Geocache Nickname</th>\n" .
+"          <th>Comment</th>\n" .
+"        </tr>\n" .
+"      <thead>\n" .
+"      %s\n" .
+"    </table>\n" .
+  );
+
+define("table_row", "
+        <tr>
+          <tr>%s</tr>
+          <tr>%s/tr>
+          <tr>%s</tr>
+        </tr>
+  ");
 
 function writelog() {
-  $date = date('Y-m-d'); # ecpoch date
   if (isset($_REQUEST[gname]) and !empty($_REQUEST[gname])) {
     if ( file_exists(log_file)) {
       $file = fopen(log_file, _pre_append) or die("Unable to open file!");
@@ -21,7 +42,7 @@ function writelog() {
     if (flock($file,LOCK_EX)) {
       $content = fread($file, filesize(log_file));
       fseek($file,0);
-      fwrite($file,$date . "|" . $_REQUEST[gname] . "|" . $_REQUEST[gcomment] ."\n" . $content);
+      fwrite($file, get_current() ."\n" . $content);
       flock($file,LOCK_UN);
     }
     fclose($file);
@@ -29,18 +50,32 @@ function writelog() {
 }
 
 function readlog() {
+  $ouput = ""
   if ( file_exists(log_file) ) {
     $log = fopen(log_file, _read);
-
-    $log_text = fread($log, filesize(log_file));
-    if (isset($_REQUEST[gname]) and !empty($_REQUEST[gname])) {
-      $log_text = date('Y-m-d') . "|" . $_REQUEST[gname] . "|" . $_REQUEST[gcomment] ."\n" . $log_text;
+    if ($log) {
+      while (($line = gets($log)) != false) {
+        $output = set_row($line);
+      }
     }
-    $log_text = preg_replace(log_pattern, log_replace, $log_text);
-    $log_text = preg_replace("/\r?\n/","</td></tr>\n<tr><td>",$log_text);
-    $log_text = "<table width=\"90%\">\n<tr><td>" . $log_text . "</td></tr>\n</table>\n";
-    print $log_text;
+    printf(table, $output);
   }
+}
+
+function set_row($input) {
+  list($date,$name,$comment) = split('|',$input);
+  return sprintf(table_row,
+    date(date_format,$date),
+    $name,
+    $comment);
+}
+
+function get_current() {
+  $output = "";
+  if ( if (isset($_REQUEST[gname]) and !empty($_REQUEST[gname])) {
+    $output = sprintf(log_format,time(),$_REQUEST[gname],$_REQUEST[gcomment]);
+  }
+  return $output;
 }
 
 function tracking_code() {
