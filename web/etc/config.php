@@ -15,9 +15,9 @@ define("find_code", "testing");
 
 define("log_file", "/tmp/geocache_log.txt");
 
-define("append", "a");
-
 define("gname","geocaching_nickname");
+
+define("gcomment","comment");
 
 date_default_timezone_set(timezone);
 ?>

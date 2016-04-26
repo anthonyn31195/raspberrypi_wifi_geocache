@@ -32,8 +32,13 @@
       id="<?php print constant("gname"); ?>"
       placeholder="Geocaching nickname..."
       data-clear-btn="true"><br>
+    <input type="text" name="<?php print constant("gcomment"); ?>" 
+      id="<?php print constant("gcomment"); ?>"
+      placeholder="Comment..."
+      data-clear-btn="true"><br>
     <input type="submit" value="Submit Log">
   </form>
+  <?php readlog(); ?>
     <?php #phpinfo(32); ?>
   </div>
   <div data-role="footer">
