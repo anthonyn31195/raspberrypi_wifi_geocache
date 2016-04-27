@@ -15,7 +15,7 @@ fi
 # 
 SCRIPT_DIR=`getabsolutepath $0`
 
-IMAGE_DIR=`getabsolutepath ../../RaspberryPI/`
+IMAGE_DIR=`getabsolutepath ../image`
 image_base=2016-03-18-raspbian-jessie.qcow2
 image=$IMAGE_DIR/$image_base
 kernel=$IMAGE_DIR/kernel-qemu-4.1.13-jessie
@@ -25,8 +25,8 @@ date=`date +%Y-%m-%d-%H-%M-%S`
 temp_dir=$SCRIPT_DIR/tmp
 snapshot_dir=$SCRIPT_DIR/snapshot
 snapshot=$image_base-$date
-snapshot_file=$temp_dir`basename $0 .sh`.snapshot
-pidfile=$temp_dir`basename $0 .sh`.pid
+snapshot_file=$temp_dir/`basename $0 .sh`.snapshot
+pidfile=$temp_dir/`basename $0 .sh`.pid
 
 if [ ! -d "$temp_dir" ] ; then
   mkdir -p "$temp_dir"
@@ -43,7 +43,7 @@ if [ ! -d "$snapshot_dir" ] ; then
   mkdir $snapshot_dir
 fi
 
-if [ -f "$image" -a !  "$snapshot_dir/$snapshot" ] ; then
+if [ -f "$image" -a ! -f "$snapshot_dir/$snapshot" ] ; then
   (cd $snapshot_dir ; qemu-img create -f $format -b $image $snapshot > /dev/null 2>&1 )
 fi
 
