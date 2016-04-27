@@ -1,8 +1,9 @@
 <?php
 
-  include_once("etc/config.php");
-  include_once("lib/functions.php");
-  writelog();
+  define('__root__',dirname(__FILE__));
+  include_once(__root__."/etc/config.php");
+  include_once(__root__."/lib/functions.php");
+  #writelog();
 ?>
 
 <!DOCTYPE html>
