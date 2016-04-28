@@ -5,7 +5,7 @@ require_once(dirname(__FILE__).'/LogEntry.php');
 class LogEntry
 {
 	const SEPARATOR = '|';
-	const LOG_RECORD = "%s" . SEPARATOR . "%s" . SEPARATOR . "%s";
+	const LOG_RECORD = "%s|%s|%s";
 	const EPOCH = 'u';
 	const DATEFORMAT = 'D, M lS, Y h:i a T';
 	const _log_date = 0;

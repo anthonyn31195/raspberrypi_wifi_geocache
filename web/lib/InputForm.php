@@ -12,7 +12,7 @@ Class InputForm {
 	const NAME = 'name';
 	const NAME_COMMENT = 'Geocaching Name:';
 	const NAME_ACTION = 'trim';
-	const NAME_RULE_COMMENT = 'Enter ' . NAME_COMMENT;
+	const NAME_RULE_COMMENT = "Enter Geocaching Name:";
 	const NAME_SIZE = 30;
 	const NAME_MAX = 100;
 	const LOG = 'submit';

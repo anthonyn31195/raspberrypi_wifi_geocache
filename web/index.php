@@ -21,9 +21,9 @@
     <h4><?php print cache_name; ?></h4>
 
 
-  <p>Lab Cache Find Code: <?php print set_color(find_code,red); ?>
+  <p>Lab Cache Find Code: <?php print find_code; ?>
   <p>Track me at Geocaching.com<br>
-  <p>Tacking Code: <?php print set_color(tracking_code(),green) . "\n"; ?>
+  <p>Tacking Code: 
   <p><form action="#" method="post">
     <label for="<?php print constant("gname"); ?>" class="ui-hidden-accessible">Geocaching Nickname:</label>
     <input type="text" name="<?php print constant("gname"); ?>" 
@@ -37,7 +37,7 @@
     <input type="submit" value="Submit Log">
   </form>
 
-    <?php readlog(); ?>
+
   </div>
 
     <h4><?php print cache_name; ?></h4>
