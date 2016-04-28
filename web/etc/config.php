@@ -17,6 +17,8 @@ define("log_file", "/tmp/geocache_log.txt");
 
 define("gname","geocaching_nickname");
 
+define("gname_label","Geocaching Nickname");
+
 define("gcomment","comment");
 
 date_default_timezone_set(timezone);
