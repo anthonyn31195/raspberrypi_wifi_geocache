@@ -12,8 +12,8 @@ if [ -f "$PID_FILE"] ; then
   /bin/rm $PID_FILE
 fi
 
-eth0=`ifconfig eth0 | awk '/inet / {print $2}'`
-lo0=`ifconfig lo0 | awk '/inet / {print $2}'`
+eth0=`ifconfig eth0 | awk '/inet / {print $2}' 2>/dev/null `
+lo0=`ifconfig lo0 | awk '/inet / {print $2}' 2>/dev/null `
 if [ -n "$lo0" ] ; then
   $PHP -S $lo0:$PORT -t $DIR > /dev/null 2>&1 & 
   echo $! >> $PID_FILE
