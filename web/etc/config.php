@@ -8,6 +8,7 @@ $tracking_codes = array(
 
 define("timezone", "America/Los_Angeles");
 
+define("footer", "Cachin' the Bay");
 
 define("cache_name", "Hacker's CacheBerry");
 
@@ -22,4 +23,8 @@ define("gname_label","Geocaching Nickname");
 define("gcomment","comment");
 
 date_default_timezone_set(timezone);
+
+function tacking_code() {
+  return php_uname('n');
+}
 ?>
