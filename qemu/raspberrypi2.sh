@@ -16,6 +16,7 @@ fi
 SCRIPT_DIR=`getabsolutepath $0`
 
 IMAGE_DIR=`getabsolutepath ../image`
+WEB_DIR=`getabsolutepath ../web`
 image_base=2016-03-18-raspbian-jessie.qcow2
 image=$IMAGE_DIR/$image_base
 kernel=$IMAGE_DIR/kernel-qemu-4.1.13-jessie
@@ -26,7 +27,10 @@ temp_dir=$SCRIPT_DIR/tmp
 snapshot_dir=$SCRIPT_DIR/snapshot
 snapshot=$image_base-$date
 snapshot_file=$temp_dir/`basename $0 .sh`.snapshot
+log_file=$temp_dir/`basename $0 .sh`.log
 pidfile=$temp_dir/`basename $0 .sh`.pid
+
+#virtfs="-virtfs local,id=host0,mount_tag=host0,path=$WEB_DIR,security_model=passthrough"
 
 if [ ! -d "$temp_dir" ] ; then
   mkdir -p "$temp_dir"
@@ -61,7 +65,7 @@ qemu-system-arm -kernel $kernel \
   -drive file="$snapshot_dir/$snapshot",index=0,media=disk,format=$format \
   -net nic \
   -net user,hostfwd=tcp::2222-:22,hostfwd=tcp::22280-:80 \
-  -pidfile $pidfile > /dev/null 2>&1 &
+  -pidfile $pidfile > $log_file 2>&1 &
 #  -snapshot \
 #  -no-reboot \
 #  -daemonize
