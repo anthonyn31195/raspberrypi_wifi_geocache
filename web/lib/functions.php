@@ -16,8 +16,10 @@ define("date_format","D, M jS, Y g:i a");
 
 function write_log($date, $username, $comment) {
   $file = fopen(log_file, "a");
+  flock($file, LOCK_EX);
   $text = sprintf(log_format, $date, $username, $comment);
   fwrite( $file, $text );
+  flock($file, LOCK_UN);
   fclose;
 }
 
