@@ -25,6 +25,11 @@ define("gcomment","comment");
 date_default_timezone_set(timezone);
 
 function tacking_code() {
-  return php_uname('n');
+  global $tracking_codes;
+  $code = "none";
+  if ( array_key_exists( php_uname("n"), $tracking_codes )) {
+    $code = $tracking_codes[php_uname('n')];
+  }
+  return $code;
 }
 ?>

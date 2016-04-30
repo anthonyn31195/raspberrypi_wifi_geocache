@@ -30,7 +30,7 @@ include_once(dirname(__file__) . "/etc/config.php");
     <div class="w3-col s3">
     </div>
     <div class="w3-col s9 w3-container">
-      <h3>Track me: <?php print tacking_code(); ?>
+      <h3>Track me: <?php print tacking_code(); ?></h3>
     </div>
   </div>
   <footer class="w3-container w3-theme">
