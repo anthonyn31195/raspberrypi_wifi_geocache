@@ -1,5 +1,6 @@
 <?php
 
+$inputForm = new InputForm();
 
 Class InputForm {
 
