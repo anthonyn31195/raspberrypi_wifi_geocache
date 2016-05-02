@@ -43,3 +43,6 @@ image
 snapshot/
 *.snapshot
 tmp/
+
+#Subline Files
+*sublime*
