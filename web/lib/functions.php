@@ -1,25 +1,23 @@
 <?php
 
-#include_once(dirname(__file__)."/LogEntries.php");
-#include_once(dirname(__file__)."/LogEntry.php");
-#include_once(dirname(__file__)."/InputForm.php");
-# Functions
-define("red","red");
-define("green","green");
-define("_append", "a");
-define("_read","r");
-define("_write","w+");
-define("_pre_append", "r+");
-define("fhostname",php_uname("n"));
-define("log_format","%s|%s|%s\n");
-define("date_format","D, M jS, Y g:i a");
+define("epoch","U");
+define("log_format", "%s|%s|%s\n");
 
-function write_log($date, $username, $comment) {
-  $file = fopen(log_file, "a");
-  flock($file, LOCK_EX);
-  $text = sprintf(log_format, $date, $username, $comment);
-  fwrite( $file, $text );
-  flock($file, LOCK_UN);
-  fclose;
+function write_log() {
+	$date = date(epoch);
+	$comment = "";
+	if (isset($_REQUEST["comment"])) {
+		$comment = json_encode($_REQUEST["comment"]);
+	}
+
+	if (isset($_REQUEST["geocaching_nickname"])) {
+		$username = $_REQUEST["geocaching_nickname"];
+		$file = fopen(log_file, "a");
+		flock($file, LOCK_EX);
+		$text = sprintf(log_format, $date, $username, $comment);
+		fwrite( $file, $text );
+		flock($file, LOCK_UN);
+		fclose;
+	}
 }
 

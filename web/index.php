@@ -1,5 +1,7 @@
 <?php 
 include_once(dirname(__file__) . "/etc/config.php");
+include_once(dirname(__file__) . "/lib/functions.php");
+write_log();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +49,7 @@ include_once(dirname(__file__) . "/etc/config.php");
       <img src="<?php print image ?>">
     </div>
     <div class="w3-col s9 w3-container">
-      <form class="form-inline" role="form" method="post" action="">
+      <form class="form" role="form" method="post" action="">
         <div class="form-group">
           <label for="geocaching_nickname">Sign the Geocache Virtual Log:</label>
           <input type="text" class="form-control" id="geocaching_nickname" name="geocaching_nickname" placeholder="Enter Your Geocaching Nickname" required>
