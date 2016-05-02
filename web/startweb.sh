@@ -15,8 +15,8 @@ fi
 
 echo "starting php" >> $LOG_FILE
 
-eth0=`ifconfig eth0 | awk '/inet / {print $2}' | sed 's/addr://' 2>/dev/null `
-lo0=`ifconfig lo0 | awk '/inet / {print $2}' | sed 's/addr://' 2>/dev/null `
+eth0=`ifconfig eth0 2> /dev/null | awk '/inet / {print $2}' | sed 's/addr://'`
+lo0=`ifconfig lo0 2> /dev/null | awk '/inet / {print $2}' | sed 's/addr://'`
 if [ -n "$lo0" ] ; then
   $PHP -S $lo0:$PORT -t $DIR >> $LOG_FILE 2>&1 & 
   echo $! >> $PID_FILE
