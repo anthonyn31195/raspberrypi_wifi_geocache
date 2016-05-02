@@ -2,6 +2,8 @@
 include_once(dirname(__file__) . "/etc/config.php");
 include_once(dirname(__file__) . "/lib/functions.php");
 write_log();
+read_log();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,19 +74,9 @@ write_log();
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Geocaching Nickname: <?php print $_REQUEST["geocaching_nickname"]; ?></h3>
-    </div>
-  </div>
-<?php } ?>
-
-<?php if ( isset($_REQUEST["comment"]) and ! empty($_REQUEST["comment"])) { ?>
-<hr>
-
-  <div class="w3-row">
-    <div class="w3-col s3">
-      <img src="<?php print image ?>">
-    </div>
-    <div class="w3-col s9 w3-container">
-      <h3><?php print nl2br($_REQUEST["comment"]); ?></h3>
+      <?php if ( isset($_REQUEST["comment"]) and ! empty($_REQUEST["comment"])) { ?>
+      <?php print nl2br($_REQUEST["comment"]); ?>
+      <?php } ?>
     </div>
   </div>
 <?php } ?>
