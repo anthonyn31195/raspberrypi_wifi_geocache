@@ -17,22 +17,51 @@ include_once(dirname(__file__) . "/etc/config.php");
   <header class="w3-container w3-card-4 w3-theme">
     <h3><?php print cache_name; ?></h3>
   </header>
+
   <hr>
+
   <div class="w3-row">
     <div class="w3-col s3">
+      <img src="<?php print image ?>">
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Find Code: <?php print find_code; ?></h3>
     </div>
   </div>
+
   <hr>
+
   <div class="w3-row">
     <div class="w3-col s3">
+      <img src="<?php print image ?>">
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Track me: <?php print tacking_code(); ?></h3>
     </div>
   </div>
+
+  <hr>
+
+  <div class="w3-row">
+    <div class="w3-col s3">
+      <img src="<?php print image ?>">
+    </div>
+    <div class="w3-col s9 w3-container">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label for="geocaching_nickname">Sign the Geocache Virtual Log:</label>
+          <input type="text" class="form-control" id="geocaching_nickname" placeholder="Enter Your Geocaching Nickname">
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="5" id="comment" placeholder="Enter Comment About this Geocache. You will still have to log this Lab Geocache on labs.geocahcing.com"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Log</button>
+      </form>
+    </div>
+  </div>
+
+<hr>
   <footer class="w3-container w3-theme">
     <h3><?php print footer ?></h3>
   </footer>
