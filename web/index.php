@@ -85,7 +85,7 @@ read_log();
   <footer class="w3-container w3-theme">
     <h3><?php print footer ?></h3>
   </footer>
-<?php phpinfo(INFO_VARIABLES); ?>
+<?php #phpinfo(INFO_VARIABLES); ?>
 </body>
 </html>
 
