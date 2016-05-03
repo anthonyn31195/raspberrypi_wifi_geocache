@@ -34,16 +34,6 @@ include_once(dirname(__file__) . "/lib/header.php");
   </div>
 <hr>
 
-  <div class="w3-row">
-    <div class="w3-col s3">
-      <center><img src="/image/raspbian.png" width="96px"></center>
-    </div>
-    <div class="w3-col s9 w3-container">
-      <h3>Raspbian</h3>
-    </div>
-  </div>
-<hr>
-
 <div class="w3-row">
     <div class="w3-col s3">
       <center><img src="<?php print raspberry_pi_logo ?>" width="56px"><br>Raspbian</center>
@@ -54,6 +44,15 @@ include_once(dirname(__file__) . "/lib/header.php");
   </div>
 <hr>
 
+  <div class="w3-row">
+    <div class="w3-col s3">
+      <center><img src="/image/raspbian.png" width="96px"></center>
+    </div>
+    <div class="w3-col s9 w3-container">
+      <h3>Raspbian</h3>
+    </div>
+  </div>
+<hr>
 
   <div class="w3-row">
     <div class="w3-col s3">
