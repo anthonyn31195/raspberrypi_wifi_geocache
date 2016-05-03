@@ -1,29 +1,7 @@
 <?php 
-include_once(dirname(__file__) . "/etc/config.php");
-include_once(dirname(__file__) . "/lib/functions.php");
-write_log();
-read_log();
-
+include_once(dirname(__file__) . "/lib/header.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title><?php print cache_name; ?></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/w3.css">
-    <link rel="stylesheet" href="/css/w3-theme-green.css">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <script src="/js/jquery-1.12.3.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
-  </head>
-<body>
-  <header class="w3-container w3-card-4 w3-theme">
-    <h3><?php print cache_name; ?></h3>
-  </header>
-
-  <hr>
-
+<div class="w3-container">
   <div class="w3-row">
     <div class="w3-col s3">
       <img src="<?php print image ?>">
@@ -85,11 +63,8 @@ read_log();
 
 <?php print read_log(); ?>
 
+</div>
 
-  <footer class="w3-container w3-theme">
-    <h3><?php print footer ?></h3>
-  </footer>
-<?php #phpinfo(INFO_VARIABLES); ?>
-</body>
-</html>
-
+<?php 
+include_once(dirname(__file__) . "/lib/footer.php");
+?>
