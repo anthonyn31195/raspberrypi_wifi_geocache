@@ -74,7 +74,7 @@ function format_row($value)
 {
 	$output = "<div class=\"w3-row\">\n" .
     	"	<div class=\"w3-col s3\">\n" .
-    	sprintf("  <img src=\"%s\">\n", image) .
+    	sprintf("  <a href=\"/\"><img src=\"%s\"></a>\n", image) .
     	"	</div>\n" .
     	"	<div class=\"w3-col s9 w3-container\">\n" .
     	"  <h5>Geocaching Nickname: " . $value[_geocaching_nickname] . "</h5>\n" .
