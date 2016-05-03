@@ -16,7 +16,7 @@ include_once(dirname(__file__) . "/lib/header.php");
 
   <div class="w3-row">
     <div class="w3-col s3">
-      <center><img src="/image/dnsmasq_logo.png" width="96px"></center>
+      <center><img src="/image/dnsmasq_logo.png" width="96px"><br><br>Dnsmasq</center>
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Dnsmasq</h3>
@@ -38,7 +38,7 @@ include_once(dirname(__file__) . "/lib/header.php");
 
 <div class="w3-row">
     <div class="w3-col s3">
-      <center><img src="<?php print raspberry_pi_logo ?>" width="56px"><br>Raspbian</center>
+      <center><img src="<?php print raspberry_pi_logo ?>" width="56px"><br><br>RaspberryPi</center>
     </div>
     <div class="w3-col s9 w3-container">
       <h3><?php print raspberry_pi_name; ?></h3>
@@ -49,7 +49,7 @@ include_once(dirname(__file__) . "/lib/header.php");
 
   <div class="w3-row">
     <div class="w3-col s3">
-      <center><img src="/image/raspbian.png" width="96px"></center>
+      <center><img src="/image/raspbian.png" width="96px"><br><br>Raspbian</center>
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Raspbian</h3>
