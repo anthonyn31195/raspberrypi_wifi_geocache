@@ -54,9 +54,9 @@ function read_log() {
 				$output .= format_row($value);
 			}
 		}
-	}
-	else {
-		print log_file . " not found";
+	#}
+	#else {
+	#	$output .= log_file . " not found";
 	}
 
 	return $output;
