@@ -48,6 +48,7 @@ read_log();
   </div>
 </div>
 <br>
+<a href="/">Home</a>
 <a href="about.php">About</a>
 <a href="logs.php">Logs</a>				
 </nav>

@@ -61,8 +61,6 @@ include_once(dirname(__file__) . "/lib/header.php");
 <?php } ?>
 <hr>
 
-<?php print read_log(); ?>
-
 </div>
 
 <?php 
