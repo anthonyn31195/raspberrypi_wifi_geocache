@@ -77,9 +77,9 @@ function format_row($value)
     	sprintf("  <a href=\"/\"><img src=\"%s\"></a>\n", image) .
     	"	</div>\n" .
     	"	<div class=\"w3-col s9 w3-container\">\n" .
-    	"  <h5>Geocaching Nickname: " . $value[_geocaching_nickname] . "</h5>\n" .
-    	"  <h6>" . $value[_date] . "</h6>\n" .
-    	"  " . $value[_comment] . "\n" .
+    	"  <h3><a href=\"" . logs . "\">" . $value[_geocaching_nickname] . "</a></h3>\n" .
+    	"  <h6><a href=\"" . logs . "\">" . $value[_date] . "</a></h6>\n" .
+    	"  <a href=\"" . logs . "\"" . $value[_comment] . "</a>\n" .
     	"	</div>\n" .
   		"</div>\n" .
   		"\n" .

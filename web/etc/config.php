@@ -22,7 +22,15 @@ define("gname_label","Geocaching Nickname");
 
 define("gcomment","comment");
 
-define("image","/image/image.png");
+define("image","/image/hacker.png");
+
+define("raspberry_pi_logo","/image/raspberry-pi-logo-212x250.png");
+
+define("raspberry_pi_name","Raspberry Pi");
+
+define("logs", "/logs.php");
+
+define("about", "/about.php");
 
 date_default_timezone_set(timezone);
 

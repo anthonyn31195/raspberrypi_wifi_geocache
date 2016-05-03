@@ -18,6 +18,12 @@ read_log();
     <!-- <script src="/js/jquery-1.12.3.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script> -->
 
+<style>
+a, u {
+    text-decoration: none;
+}
+</style>
+
 <script>
 	function w3_open() {
 		var x = document.getElementsByClassName("w3-sidenav")[0];
@@ -35,7 +41,7 @@ read_log();
   <header class="w3-container w3-card-4 w3-theme">
   	<h3>
   	<i class="w3-opennav fa fa-bars" onclick="w3_open()"></i>
-    <?php print cache_name; ?>
+    <a href="/"><?php print cache_name; ?></a>
 	</h3>
   </header>
 
@@ -44,13 +50,13 @@ read_log();
   <span onclick="w3_close()" class="w3-closenav w3-right w3-xlarge">x</span>
   <br>
   <div class="w3-padding w3-center">
-    <img class="w3-circle" src="<?php print image ?>" alt="avatar" style="width:75%">
+    <a href="/"><img class="w3-circle" src="<?php print image ?>" alt="avatar" style="width:75%"></a>
   </div>
 </div>
 <br>
 <a href="/">Home</a>
-<a href="about.php">About</a>
-<a href="logs.php">Logs</a>				
+<a href="<?php print about; ?>">About</a>
+<a href="<?php print logs; ?>">Logs</a>				
 </nav>
 
 <hr>
