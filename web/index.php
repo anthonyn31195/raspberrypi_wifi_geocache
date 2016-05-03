@@ -74,14 +74,18 @@ read_log();
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Geocaching Nickname: <?php print $_REQUEST["geocaching_nickname"]; ?></h3>
+      <h6><?php print date(date_text); ?></h6>
       <?php if ( isset($_REQUEST["comment"]) and ! empty($_REQUEST["comment"])) { ?>
       <?php print nl2br($_REQUEST["comment"]); ?>
       <?php } ?>
     </div>
   </div>
 <?php } ?>
-
 <hr>
+
+<?php print read_log(); ?>
+
+
   <footer class="w3-container w3-theme">
     <h3><?php print footer ?></h3>
   </footer>
