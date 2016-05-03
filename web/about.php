@@ -20,6 +20,7 @@ include_once(dirname(__file__) . "/lib/header.php");
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Dnsmasq</h3>
+      Dnsmasq is a Domain Name System (DNS) forwarder and Dynamic Host Configuration Protocol (DHCP) server for small computer networks, created as free software.
     </div>
   </div>
 <hr>
@@ -30,6 +31,7 @@ include_once(dirname(__file__) . "/lib/header.php");
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Lighttpd</h3>
+      Lighttpd (pronounced "lighty") is an open-source web server.
     </div>
   </div>
 <hr>
@@ -40,6 +42,7 @@ include_once(dirname(__file__) . "/lib/header.php");
     </div>
     <div class="w3-col s9 w3-container">
       <h3><?php print raspberry_pi_name; ?></h3>
+      The Raspberry Pi is a series of credit card–sized single-board computers developed in the United Kingdom by the Raspberry Pi Foundation with the intent to promote the teaching of basic computer science in schools and developing countries.
     </div>
   </div>
 <hr>
@@ -50,6 +53,7 @@ include_once(dirname(__file__) . "/lib/header.php");
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Raspbian</h3>
+      Raspbian is a free operating system based on Debian optimized for the Raspberry Pi hardware. An operating system is the set of basic programs and utilities that make your Raspberry Pi run.
     </div>
   </div>
 <hr>
