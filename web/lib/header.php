@@ -2,6 +2,7 @@
 include_once(dirname(__file__) . "/../etc/config.php");
 include_once(dirname(__file__) . "/functions.php");
 include_once(dirname(__file__) . "/../emoji/emoji.php");
+include_once(dirname(__file__) . "/../emoticons/emoticons.php");
 write_log();
 read_log();
 
