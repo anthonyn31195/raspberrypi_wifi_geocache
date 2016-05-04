@@ -55,7 +55,7 @@ include_once(dirname(__file__) . "/lib/header.php");
       <h3>Geocaching Nickname: <?php print $_REQUEST["geocaching_nickname"]; ?></h3>
       <h6><?php print date(date_text); ?></h6>
       <?php if ( isset($_REQUEST["comment"]) and ! empty($_REQUEST["comment"])) { ?>
-      <?php print nl2br($_REQUEST["comment"]); ?>
+      <?php print nl2br(emoji_unified_to_html(emoticons($_REQUEST["comment"]))); ?>
       <?php } ?>
     </div>
   </div>

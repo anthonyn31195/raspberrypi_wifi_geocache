@@ -1,44 +1,65 @@
 <?php
 
+define("emoticons_format", "<img src=\"/emoticons/image/%s\">\n");
+
+define("emoji_format","<span class=\"emoji-outer emoji-sizer\"><span class=\"emoji-inner %s\"></span></span>\n");
+
 function emoticons($text)
 {
 	$icons = array(
- 	':)' => '/emoticons/image/X8YPpi6kcyo.png',
- 	':-)' => '/emoticons/image/X8YPpi6kcyo.png',
-	':]' => '/emoticons/image/X8YPpi6kcyo.png',
-	':D' => '/emoticons/image/SOe5wIZyutW.png',
-	':-D' => '/emoticons/image/SOe5wIZyutW.png',
-	'3:)' => '/emoticons/image/bvfMUb1yU5Z.png',
-	':p' => '/emoticons/image/viyyiQhRqLr.png',
-	':P' => '/emoticons/image/viyyiQhRqLr.png',
-	':-p' => '/emoticons/image/viyyiQhRqLr.png',
-	':-P' => '/emoticons/image/viyyiQhRqLr.png',
-	':(' => '/emoticons/image/XVs6rhX0HCD.png',
-	':-(' => '/emoticons/image/XVs6rhX0HCD.png',
-	':[' => '/emoticons/image/XVs6rhX0HCD.png',
-	':v' => '/emoticons/image/FeRtbwVZERQ.png',
-	':V' => '/emoticons/image/FeRtbwVZERQ.png',
-	':/' => '/emoticons/image/i-Fg0CS-Xq8.png',
-	':\\' => '/emoticons/image/i-Fg0CS-Xq8.png',
-	'o.O' => '/emoticons/image/LEKRsmLFjbd.png',
-	'O.o' => '/emoticons/image/FtASKJbXQI.png',
-	':*' => '/emoticons/image/8IHydBiR1IR.png',
-	':-*' => '/emoticons/image/8IHydBiR1IR.png',
-	'<3' => '/emoticons/image/Ob2Er7b1NpV.png',
-	'B-)' => '/emoticons/image/xU0r2S80RP0.png',
-	'8-)' => '/emoticons/image/xU0r2S80RP0.png',
-	':3' => '/emoticons/image/XaD2c4CSAqh.png',
-	';)' => '/emoticons/image/rk0jOpK8_0P.png',
-	':\'(' => '/emoticons/image/A-la0dkt8j5.png',
-	':o' => '/emoticons/image/4WPn8J2IZu9.png',
+ 	#':)' => 'X8YPpi6kcyo.png',
+ 	':-)' => 'X8YPpi6kcyo.png',
+	':]' => 'X8YPpi6kcyo.png',
+	':D' => 'SOe5wIZyutW.png',
+	':-D' => 'SOe5wIZyutW.png',
+	'3:)' => 'bvfMUb1yU5Z.png',
+	':p' => 'viyyiQhRqLr.png',
+	':P' => 'viyyiQhRqLr.png',
+	':-p' => 'viyyiQhRqLr.png',
+	':-P' => 'viyyiQhRqLr.png',
+	':(' => 'XVs6rhX0HCD.png',
+	':-(' => 'XVs6rhX0HCD.png',
+	':[' => 'XVs6rhX0HCD.png',
+	':v' => 'FeRtbwVZERQ.png',
+	':V' => 'FeRtbwVZERQ.png',
+	':/' => 'i-Fg0CS-Xq8.png',
+	':\\' => 'i-Fg0CS-Xq8.png',
+	'o.O' => 'LEKRsmLFjbd.png',
+	'O.o' => 'FtASKJbXQI.png',
+	':*' => '8IHydBiR1IR.png',
+	':-*' => '8IHydBiR1IR.png',
+	'<3' => 'Ob2Er7b1NpV.png',
+	'B-)' => 'xU0r2S80RP0.png',
+	'8-)' => 'xU0r2S80RP0.png',
+	':3' => 'XaD2c4CSAqh.png',
+	';)' => 'rk0jOpK8_0P.png',
+	':\'(' => 'A-la0dkt8j5.png',
+	':o' => '4WPn8J2IZu9.png'
  	);
+	
+	$emoji_icons = array(
+		':)' => 'emoji263a',
+		'♡' => 'emoji2665',
+		'♤' => 'emoji2660',
+		'♧' => 'emoji2663',
+		'◇' => 'emoji2666'
+	);
 
- 	$text = ' '.$text.' ';
- 	foreach($icons as $search => $replace)
- 	{
- 		$text = str_replace(' '.$search.' ',' '.'<img src="'.$replace.'">'.' ',$text);
- 		$text = str_replace(' '.$search.' ',' '.'<img src="'.$replace.'">'.' ',$text);
- 	}
- 	return trim($text);
+	foreach ($icons as $key => &$value ) {
+		$value = sprintf(emoticons_format, $value);
+	}
+
+	foreach ($emoji_icons as $key => &$value ) {
+		$value = sprintf(emoji_format, $value);
+	}
+
+
+	return str_replace(
+		array_keys($emoji_icons), 
+		$emoji_icons,
+		str_replace(
+				array_keys($icons), 
+				$icons, 
+				$text));
 }
 ?>
