@@ -67,6 +67,16 @@ include_once(dirname(__file__) . "/lib/header.php");
     </div>
   </div>
 <hr>
+  <div class="w3-row">
+    <div class="w3-col s3">
+      <br>
+    </div>
+    <div class="w3-col s9 w3-container">
+      <br>
+      <br>
+      <br>
+    </div>
+  </div>
 </div>
 
 <?php 

@@ -1,6 +1,7 @@
 <?php 
 include_once(dirname(__file__) . "/../etc/config.php");
 include_once(dirname(__file__) . "/functions.php");
+include_once(dirname(__file__) . "/../emoji/emoji.php");
 write_log();
 read_log();
 
@@ -15,6 +16,7 @@ read_log();
     <link rel="stylesheet" href="/css/w3-theme-green.css">
     <!--<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/emoji/emoji.css">
     <!-- <script src="/js/jquery-1.12.3.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script> -->
 
@@ -25,8 +27,8 @@ a, u {
 .header_padding {
   position: relative;
   top: 40px;
-  bottom: 400px;
-  overflow:scroll
+  bottom: 20px;
+  overflow:auto;
 }
 </style>
 

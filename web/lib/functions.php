@@ -79,7 +79,7 @@ function format_row($value)
     	"	<div class=\"w3-col s9 w3-container\">\n" .
     	"  <h3><a href=\"" . logs . "\">" . $value[_geocaching_nickname] . "</a></h3>\n" .
     	"  <h6><a href=\"" . logs . "\">" . $value[_date] . "</a></h6>\n" .
-    	"  <a href=\"" . logs . "\"" . $value[_comment] . "</a>\n" .
+    	"  <a href=\"" . logs . "\">" . emoji_unified_to_html($value[_comment]) . "</a>\n" .
     	"	</div>\n" .
   		"</div>\n" .
   		"\n" .
