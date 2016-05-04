@@ -22,6 +22,12 @@ read_log();
 a, u {
     text-decoration: none;
 }
+.header_padding {
+  position: relative;
+  top: 40px;
+  bottom: 400px;
+  overflow:scroll
+}
 </style>
 
 <script>
@@ -38,7 +44,7 @@ a, u {
   </head>
 <body style="max-width:600px">
 
-  <header class="w3-container w3-card-4 w3-theme">
+  <header class="w3-container w3-card-4 w3-theme w3-top">
   	<h3>
   	<i class="w3-opennav fa fa-bars" onclick="w3_open()"></i>
     <a href="/"><?php print cache_name; ?></a>
@@ -60,3 +66,6 @@ a, u {
 </nav>
 
 <hr>
+</div>
+
+

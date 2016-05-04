@@ -1,7 +1,8 @@
 <?php 
 include_once(dirname(__file__) . "/lib/header.php");
 ?>
-<div class="w3-container">
+
+<div class="w3-container header_padding">
   <div class="w3-row">
     <div class="w3-col s3">
       <a href="/"><img src="<?php print image ?>"></a>
@@ -58,11 +59,11 @@ include_once(dirname(__file__) . "/lib/header.php");
       <?php } ?>
     </div>
   </div>
+
 <?php } ?>
 <hr>
 
 </div>
-
 <?php 
 include_once(dirname(__file__) . "/lib/footer.php");
 ?>
