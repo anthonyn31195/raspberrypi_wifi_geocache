@@ -4,6 +4,10 @@ http://www.piface.org.uk/assets/piface_clock/PiFaceClockguide.pdf
 sudo apt-get --quiet update  
 sudo apt-get --yes --quiet upgrade  
 sudo apt-get --yes --quiet install dnsmasq dnsutils hostapd i2c-tools iptables lighttpd php5-cgi php-pear  
+wget https://raw.githubusercontent.com/piface/PiFace-Real-Time-Clock/master/install-piface-real-time-clock.sh  
+chmod 700 install-piface-real-time-clock.sh  
+./install-piface-real-time-clock.sh  
+
 sudo pear install HTML_Table
 
 sudo vi /etc/dnsmasq.d/geocache.conf
