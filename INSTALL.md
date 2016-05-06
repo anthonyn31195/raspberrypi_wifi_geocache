@@ -14,7 +14,7 @@ sudo dpkg-reconfigure keyboard-configuration
 
 sudo raspi-config
 
-https://redmine.lighttpd.net/projects/1/wiki/HowToSimpleSSL
+https://redmine.lighttpd.net/projects/1/wiki/HowToSimpleSSL  
 cd /etc/lighttpd/certs
-openssl req -new -x509 -keyout lighttpd.pem -out lighttpd.pem -days 365 -nodes
-chmod 400 lighttpd.pem
+openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
+chmod 400 server.pem
