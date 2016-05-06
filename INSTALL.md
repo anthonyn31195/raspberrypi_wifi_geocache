@@ -1,6 +1,6 @@
 
 **Install instruction**
-
+http://www.piface.org.uk/assets/piface_clock/PiFaceClockguide.pdf  
 sudo apt-get --quiet update  
 sudo apt-get --yes --quiet upgrade  
 sudo apt-get --yes --quiet install dnsmasq dnsutils hostapd iptables lighttpd php5-cgi php-pear
