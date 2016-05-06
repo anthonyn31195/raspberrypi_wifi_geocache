@@ -32,7 +32,7 @@ function write_log() {
 		$text = sprintf(log_format, $date, $username, $comment);
 		fwrite( $file, $text );
 		flock($file, LOCK_UN);
-		fclose;
+		fclose($file);
 	}
 }
 

@@ -63,7 +63,7 @@ main() {
     -append "root=/dev/sda2 panic=1 -no-reboot rootfstype=ext4 rw format=$format" \
     -drive file="$snapshot_dir/$snapshot",index=0,media=disk,format=$format \
     -net nic \
-    -net user,hostfwd=tcp::2222-:22,hostfwd=tcp::22280-:80 \
+    -net user,hostfwd=tcp::2222-:22,hostfwd=tcp::22280-:80,hostfwd=tcp::22443-:443 \
     -pidfile $pidfile >> $log_file 2>&1 &
   #  -snapshot \
   #  -no-reboot \
