@@ -1,5 +1,5 @@
 
-**Install instruction**
+**Install instruction**  
 http://www.piface.org.uk/assets/piface_clock/PiFaceClockguide.pdf  
 sudo apt-get --quiet update  
 sudo apt-get --yes --quiet upgrade  
