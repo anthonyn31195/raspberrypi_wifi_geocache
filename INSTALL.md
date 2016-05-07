@@ -14,7 +14,11 @@ ssh <raspberrpi>
 
 cd web  
 
-mv * /var/www/html/
+sudo mv * /var/www/html
+
+cd /var/www/html  
+
+chown -Rv root:root *
 
 sudo vi /etc/dnsmasq.d/geocache.conf
 
