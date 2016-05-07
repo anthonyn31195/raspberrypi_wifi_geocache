@@ -34,6 +34,15 @@ sudo ln -s ../conf-available/90-raspberrypi.conf
 
 sudo service lighttpd restart  
 
+zcat /usr/share/doc/hostapd/examples/hostapd.conf.gz | sudo tee -a /etc/hostapd/hostapd.conf  
+
+sudo vi /etc/hostapd/hostapd.conf  
+
+Change ssid = geocache
+enable country_code=US <-- or your county code
+enable ieee80211d=1
+
+
 sudo vi /etc/dnsmasq.d/geocache.conf
 
 Add:
