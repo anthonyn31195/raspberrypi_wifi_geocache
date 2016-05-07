@@ -14,13 +14,25 @@ scp -r etc \<raspberrypi\>
 
 ssh \<raspberrpi\>  
 
-cd web  
+cd ~/web  
 
 sudo mv * /var/www/html
 
 cd /var/www/html  
 
 chown -Rv root:root *
+
+cd ~/etc/lighttpd  
+
+sudo mv 90-raspberrypi.conf /etc/lighttpd//etc/lighttpd/conf-enabled 
+
+cd /etc/lighttpd/conf-enabled  
+
+sudo ln -s ../conf-available/10-fastcgi.conf
+sudo ln -s ../conf-available/15-fastcgi-php.conf
+sudo ln -s ../conf-available/90-raspberrypi.conf
+
+sudo service lighttpd restart  
 
 sudo vi /etc/dnsmasq.d/geocache.conf
 
