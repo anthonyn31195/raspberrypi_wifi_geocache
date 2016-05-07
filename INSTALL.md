@@ -10,6 +10,8 @@ chmod 700 install-piface-real-time-clock.sh
 
 scp -r web \<raspberrypi\>  
 
+scp -r etc \<raspberrypi\>  
+
 ssh \<raspberrpi\>  
 
 cd web  
