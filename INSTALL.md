@@ -8,9 +8,9 @@ wget https://raw.githubusercontent.com/piface/PiFace-Real-Time-Clock/master/inst
 chmod 700 install-piface-real-time-clock.sh  
 ./install-piface-real-time-clock.sh  
 
-scp -r web <raspberrypi>  
+scp -r web \<raspberrypi\>  
 
-ssh <raspberrpi>  
+ssh \<raspberrpi\>  
 
 cd web  
 
