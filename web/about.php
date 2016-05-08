@@ -27,11 +27,11 @@ include_once(dirname(__file__) . "/lib/header.php");
 
   <div class="w3-row">
     <div class="w3-col s3">
-      <center><img src="/image/netfilter-logo2.png" width="66px"></center>
+      <center><img src="/image/netfilter-logo2.png" width="66px"><br><br>Iptables</center>
     </div>
     <div class="w3-col s9 w3-container">
       <h3>Iptables</h3>
-      Iptables - Linux Firewall.
+      Linux Firewall
     </div>
   </div>
 <hr>
