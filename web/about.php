@@ -34,6 +34,17 @@ include_once(dirname(__file__) . "/lib/header.php");
       Lighttpd (pronounced "lighty") is an open-source web server.
     </div>
   </div>
+
+<hr>
+ <div class="w3-row">
+    <div class="w3-col s3">
+      <center><img src="/image/php.png" width="66px"></center>
+    </div>
+    <div class="w3-col s9 w3-container">
+      <h3>PHP</h3>
+      PHP Hypertext Preprocessor - adding dynic contect to web pages.
+    </div>
+  </div>
 <hr>
 
 <div class="w3-row">
