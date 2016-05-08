@@ -55,3 +55,6 @@ https://redmine.lighttpd.net/projects/1/wiki/HowToSimpleSSL
 cd /etc/lighttpd  
 openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes  
 chmod 400 server.pem
+
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j DNAT --to 192.168.42.1:80  
+sudo iptables -t nat -I PREROUTING -p tcp --dport 443 -j DNAT --to 192.168.42.1:443  
