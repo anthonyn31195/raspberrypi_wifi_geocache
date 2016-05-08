@@ -58,3 +58,7 @@ chmod 400 server.pem
 
 sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j DNAT --to 192.168.42.1:80  
 sudo iptables -t nat -I PREROUTING -p tcp --dport 443 -j DNAT --to 192.168.42.1:443  
+sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"  
+sudo sh -c "pre-up iptables-restore < /etc/iptables.ipv4.nat" >> /etc/network/interfaces  
+sudo sh -c "sysctl -w net.ipv4.conf.all.route_localnet=1" >> /etc/sysctl.conf  
+
