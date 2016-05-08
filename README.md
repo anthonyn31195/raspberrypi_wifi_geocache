@@ -38,10 +38,13 @@ In order to find the cache and sign the log book, the cacher the geocacher will 
 * [hostapd](https://w1.fi/hostapd/) - Wi-Fi access point software
 * [iptables](https://en.wikipedia.org/wiki/Iptables) - IP Packet filtering
 * [lighttpd](https://www.lighttpd.net/) - Web Server software
+* [php](http://php.net/) - Hypertext Preprocessor.
+
+** Software need to your computer **  
 * [ssh](https://en.wikipedia.org/wiki/Secure_Shell) - Login using SSH cliets like: (optional)  
 * [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) for Window.
 
-**How it works:**
+**How it works:**  
 
 * **Raspbian** a Linux operating system the is installed on the MircoSD card.
 * **Hostapd** is the Wi-Fi access point software that broadcast the SSID that Wi-FI client need to connect to the subnet.
