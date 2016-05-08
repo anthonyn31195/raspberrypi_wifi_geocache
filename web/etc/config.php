@@ -28,9 +28,9 @@ define("raspberry_pi_logo","/image/raspberry-pi-logo-212x250.png");
 
 define("raspberry_pi_name","Raspberry Pi");
 
-define("logs", "/logs.php");
+define("logs", "/logs/");
 
-define("about", "/about.php");
+define("about", "/about/");
 
 date_default_timezone_set(timezone);
 
