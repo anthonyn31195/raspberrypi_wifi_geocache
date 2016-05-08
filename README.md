@@ -1,12 +1,12 @@
 # RaspberryPI Wi-Fi Geocache 
 
-This is at GIT repo to create a [RaspberryPI](https://www.raspberrypi.org/) Wi-FI Geocache aka (CacheBerry)
+** This is at GIT repo to create a [RaspberryPI](https://www.raspberrypi.org/) Wi-FI Geocache aka (CacheBerry) **
 
-The purpose of this is to setup a [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi) Geocache using the RasberryPI as field puzzle. You will to install and set software. It does not scribe how to set the hardware side of the cache or power it with a battery. This is based on [Wireless Geocache Tutorial](http://forums.groundspeak.com/GC/index.php?showtopic=329890) on [Geocaching Forums](http://forums.groundspeak.com)
+The purpose of this is to setup a [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi) Geocache using the RasberryPI as field puzzle. The RaspberryPi is an open souce hardware platform and use open source sofrware to confiure the device. It does not scribe how to set the hardware side of the cache or power it with a battery. This is based on [Wireless Geocache Tutorial](http://forums.groundspeak.com/GC/index.php?showtopic=329890) on [Geocaching Forums](http://forums.groundspeak.com)
 
-Since most Geocacher have smart phones with Wi-Fi and web browser they already have to Tools Of The Trade (TOTT) needed.
+** Since most Geocacher have smart phones with Wi-Fi and web browser they already have to Tools Of The Trade (TOTT) needed. **
 
-Inorder to find and log this cache the geocacher will have to find the Wi-Fi access point Service Set Identifier (SSID), Open a Web Broswer App on there phone and navagate to the log page. Enter there Geocaching nickname on the form and hit submit button.
+In order to find the cache and sign the log book, the cacher the geocacher will have to find the Wi-Fi network. (Service Set Identifier or SSID), Open a Web Broswer App on their phone and navagate to any web page via (http). The device will responed with the main web page. On the main page will be the a form to enter there geocaching nickname and a comment and a submit buttton (log). To sing the the log. There will be a menu on the upper left side of the tile bar (aka Hambeger menu) to navagate to the an About page and Logs page.  
 
 **There are a few things that must be accounted for:**
  * The RaspberryPi will be standalone and not conencted to the Internet.
