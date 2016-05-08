@@ -14,7 +14,7 @@ define("cache_name", "Hacker's Wi-Fi CacheBerry");
 
 define("find_code", "testing");
 
-define("log_file", "/tmp/geocache_log.txt");
+define("log_file", "/var/www/html/geocache_log/geocache_log.txt");
 
 define("gname","geocaching_nickname");
 
